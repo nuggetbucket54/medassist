@@ -1,0 +1,279 @@
+
+#title {
+  background-color: #393D3D;
+  color: white;
+}
+
+
+h1 {
+  padding-top: 60px;
+  padding-left: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+}
+
+.calltoaction {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.container-fluid{
+  padding: 0px 5px 0px 0px;
+}
+
+.navbar{
+  background-color: #385399;
+  padding-left: 0px;
+  margin: 0px;
+  height: 140px;
+}
+
+
+.navbar-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 6.35rem;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+
+.navbar-brand:hover {
+  color: #ADB4B4;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+}
+
+#features{
+  padding: 7% 15%;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+#image {
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 75px;
+  color: #385399;
+  border-radius: 50%;
+}
+
+#image:hover {
+  color: #ff4c68;
+}
+
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 5rem;
+}
+
+.testimonial-image {
+  margin: 20px;
+  width: 15%;
+  border-radius: 100%;
+}
+
+#press {
+  background-color: red;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 10px 30px;
+}
+
+
+.carousel-item {
+    height: 500px;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+#cta {
+  padding: 7% 15%;
+  background-color: red;
+  text-align: center;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  margin: 20px 10px;
+}
+
+.col-md-6 {
+  margin-top: 5px;
+}
+
+.btn {
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+#body {
+  background-color: white;
+}
+
+.nav-link {
+  color: white;
+  margin-left: 45px;
+  margin-right: 4px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav-link:hover{
+  background-color: red;
+  color: white;
+
+}
+
+#body {
+
+}
+
+.forpicture {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.col-lg-6 {
+  position: absolute;
+  bottom: 600px;
+  left: 16px;
+}
+
+.pharmacy {
+  width: 100%
+}
+
+.box {
+  margin-left: 150px;
+  background-color: rgb(0,0,0,0.5);
+  border-radius: 10px 140px 30px 140px;
+}
+
+.description {
+  padding: 50px 50px;
+  color: white;
+  opacity: .9;
+}
+.fa-pills {
+  width: 150%;
+}
+
+.desc2 {
+  text-align: center;
+  margin-left: 25px;
+}
+
+.col-lg-3 {
+  text-align: center;
+}
+
+#userpersona {
+  background-color: #385899;
+}
+
+.user {
+  width: 60%;
+}
+
+.desc3 {
+  text-align: center;
+  color: white;
+}
+
+.reco {
+  color: #385899;
+  font-family: "Overpass", sans-serif;
+  font-size: 5.35rem;
+  font-weight: bold;
+  padding: 0px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#recordings {
+  text-align: center;
+}
+
+#add {
+  margin: 0px;
+  color: #385399;
+}
+
+#add:hover{
+  color: red;
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: black;
+}
+
+hr {
+  border-color: black;
+  border-radius: 30px;
+}
