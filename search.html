@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get Text Input Field Value in JavaScript</title>
+</head>
+<body>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    
+    <script>
+        var medicines = {
+            "SYNTHROID": "02172151",
+            "CRESTOR": "02265540",
+            "VENTOLIN 5MG": "02213427",
+            "NEXIUM 10MG": "02300524",
+            "NEXIUM 20MG": "02244522",
+            "NEXIUM 40MG": "02244521",
+            "ADVIL IBUPROFEN CAPLET 200MG": "01933531",
+            "ADVIL IBUPROFEN 200MG TABLET": "01933558",
+            "ADVIL MUSCLE AND JOINT 400MG TABLETS": "02355701",
+            "JUNIOR STRENGTH TYLENOL FASTMELTS 160MG TABLET": "02347792",
+            "TYLENOL REGULAR STRENGTH 325MG TABLET": "00559393",
+            "TYLENOL EXTRA STRENGTH 500MG TABLET": "00559407",
+            "ADVIL 12 HOUR": "02443562"
+        }
+
+        const libr = {}
+
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+
+            var drug = inputVal;
+            var din = medicines[inputVal];
+            var dinlink = "https://health-products.canada.ca/api/drug/drugproduct/?din=" + din;
+
+            var x = fetch(dinlink)
+                .then(res => res.json())
+                .then((out) => {
+                    var outp = out[0]
+
+                    //console.log(out)
+                    drug_code = outp["drug_code"]
+                    manufacturer = outp["company_name"]
+
+                    //console.log(drug_code)
+                    //console.log(manufacturer)
+                    
+                    dclink = "https://health-products.canada.ca/api/drug/activeingredient/?lang=en&id=" + drug_code
+
+                    fetch(dclink)
+                        .then(res => res.json())
+                        .then((out) => {
+                            var outp = out[0];
+                            const active_ingredient = outp["ingredient_name"]
+                            libr["active_ingredient"] = active_ingredient;
+
+                            /*
+                            let fs = require("fs");
+                            fs.readFile("./data.json", (err, file) => {
+                                let data = JSON.parse(txt);
+                                data.push({
+                                    ingredient: active_ingredient
+                                });
+
+                                fs.writeFile("file.json", JSON.stringify(data));
+                            });
+                            */
+
+                            
+                        })
+                        .catch(err => {
+                            throw err
+                        });
+
+                    libr["drug_code"] = drug_code;
+                    libr["manufacturer"] = manufacturer;
+
+                })
+                .catch(err => {
+                    throw err
+                });
+        console.log(libr) 
+        }
+        
+    </script>
+</body>
+</html>

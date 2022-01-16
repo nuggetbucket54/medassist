@@ -1,0 +1,66 @@
+#medications {
+  text-align: center;
+}
+
+.medi {
+  color: #385899;
+  font-family: "Overpass", sans-serif;
+  font-size: 5.35rem;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #ADB4B4;
+}
+
+.col-lg-6 {
+}
+
+.medicate {
+  font-family: "Overpass", sans-serif;
+  font-size: 2rem;
+  height: 100px;
+  width: 600px
+}
+
+h2 {
+  margin-left: 150px;
+  color: #385899;
+  font-family: "Overpass", sans-serif;
+  margin-top: 40px;
+}
+
+#search-select {
+  font-family: "Overpass", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  height: 50px;
+  width: 500px;
+  background-color: #D3D3D3;
+}
+
+#submit {
+  font-family: "Overpass", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  position: absolute;
+  height: 50px;
+  width: 200px;
+}
+
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: black;
+}
+
+hr {
+  border-color: black;
+  border-radius: 30px;
+}
